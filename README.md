@@ -9,7 +9,7 @@
 **Programming Language:** Python 3.x  
 **Repository:** [https://github.com/ATDehkordi/DefoEye](https://github.com/ATDehkordi/DefoEye)  
 
-> ⚠️ *Note: The current repository contains a partial release of the full DefoEye software. The complete version will be uploaded following the acceptance of the related publication.*
+>  *Note: The current repository contains a partial release of the full DefoEye software. The complete version will be uploaded following the acceptance of the related publication.*
 
 ---
 
