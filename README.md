@@ -8,7 +8,6 @@
 **First Official Release:** May 2025  
 **Programming Language:** Python 3.x  
 **Repository:** [https://github.com/ATDehkordi/DefoEye](https://github.com/ATDehkordi/DefoEye)  
-**License:** Open-source (MIT License)
 
 > ⚠️ *Note: The current repository contains a partial release of the full DefoEye software. The complete version will be uploaded following the acceptance of the related publication.*
 
