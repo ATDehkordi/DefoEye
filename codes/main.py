@@ -1,20 +1,20 @@
 import argparse
-from directorymanager import create_required_directories, create_symboliklink_EOF, create_symboliklink_Tif
-from downloadDEM import DEMdownloader
-from create_baselinetable import Create_baselinetable_of_S1_data
-from select_master_image_Coregistration import Master_selection
-from coregistration import Coregistration
-from intf_pairs import intf_pairs
-from intf_computation import Intf_compute
-from merge_subswaths import merge
-from create_landmask import Landmask
-from phase_unwrapping import PhaseUnwrapping
-from corr_grd_backup_preparation import Corr
-from automatic_point_referencing import Automatic_PointReferencing
-from automatic_average_referencing import Average_Referencing
-from point_referencing import Referencing
-from SBAS import SBASadjustment
-from SBAS_outputs import SBASoutputs
+from Modules.directorymanager import create_required_directories, create_symboliklink_EOF, create_symboliklink_Tif
+from Modules.downloadDEM import DEMdownloader
+from Modules.create_baselinetable import Create_baselinetable_of_S1_data
+from Modules.select_master_image_Coregistration import Master_selection
+from Modules.coregistration import Coregistration
+from Modules.intf_pairs import intf_pairs
+from Modules.intf_computation import Intf_compute
+from Modules.merge_subswaths import merge
+from Modules.create_landmask import Landmask
+from Modules.phase_unwrapping import PhaseUnwrapping
+from Modules.corr_grd_backup_preparation import Corr
+# from automatic_point_referencing import Automatic_PointReferencing
+# from automatic_average_referencing import Average_Referencing
+# from point_referencing import Referencing
+# from SBAS import SBASadjustment
+# from SBAS_outputs import SBASoutputs
 import time
 
 def main(condition_for_running):
@@ -212,80 +212,80 @@ def main(condition_for_running):
     corr_prep.corr_backup()
     corr_prep.corr_cut_create_pdf()
 
-    print('')
-    print('#####################################  Loop Closure')
-    print('')
+    # print('')
+    # print('#####################################  Loop Closure')
+    # print('')
 
-    print('Do you want to filter interferograms by loop closure checking? answer must be: "yes, y, true, no, n, false"')
+    # print('Do you want to filter interferograms by loop closure checking? answer must be: "yes, y, true, no, n, false"')
 
-    user_answer_referencing = input()
+    # user_answer_referencing = input()
+
+    # # if user_answer_referencing in ["yes", "y", "true"]:
+
+    # print('')
+    # print('#####################################  Referencing')
+    # print('')
+
+    # print('Do you want to consider a reference point? answer must be: "yes, y, true, no, n, false"')
+    # user_answer_referencing = input()
 
     # if user_answer_referencing in ["yes", "y", "true"]:
 
-    print('')
-    print('#####################################  Referencing')
-    print('')
+    #     print('Do you want to use a single point lat and lon (insert 1) or average of the unwrapped intfs (insert 2) as the reference ?')
+    #     user_method_referencing = input()
 
-    print('Do you want to consider a reference point? answer must be: "yes, y, true, no, n, false"')
-    user_answer_referencing = input()
+    #     if int(user_method_referencing)==1:
+    #         print('Please enter the reference point Lat:')
+    #         ref_lat = input()
+    #         print('Please enter the reference point Lon:')
+    #         ref_lon = input()
+    #         print('Please enter the neighbourhood size (n) (it creates a 2n+1 grid around the reference point):')
+    #         neighbourhoodsize = input()
 
-    if user_answer_referencing in ["yes", "y", "true"]:
+    #         pointreferencing = Referencing(work_path, float(ref_lat), float(ref_lon), int(neighbourhoodsize))
+    #         pointreferencing.referencing()
 
-        print('Do you want to use a single point lat and lon (insert 1) or average of the unwrapped intfs (insert 2) as the reference ?')
-        user_method_referencing = input()
+    #     elif int(user_method_referencing)==2:
 
-        if int(user_method_referencing)==1:
-            print('Please enter the reference point Lat:')
-            ref_lat = input()
-            print('Please enter the reference point Lon:')
-            ref_lon = input()
-            print('Please enter the neighbourhood size (n) (it creates a 2n+1 grid around the reference point):')
-            neighbourhoodsize = input()
+    #         print('Referencing on the average of unwrapped interferograms')
+    #         print('Please enter the coherency threshold for computing the average of each unwrapp intf (recommended values: 0.1):')
+    #         Th_coherency_referenceaveraging = input()
 
-            pointreferencing = Referencing(work_path, float(ref_lat), float(ref_lon), int(neighbourhoodsize))
-            pointreferencing.referencing()
-
-        elif int(user_method_referencing)==2:
-
-            print('Referencing on the average of unwrapped interferograms')
-            print('Please enter the coherency threshold for computing the average of each unwrapp intf (recommended values: 0.1):')
-            Th_coherency_referenceaveraging = input()
-
-            avg_referencing = Average_Referencing(work_path, float(Th_coherency_referenceaveraging))
-            avg_referencing.average_referencing()
+    #         avg_referencing = Average_Referencing(work_path, float(Th_coherency_referenceaveraging))
+    #         avg_referencing.average_referencing()
             
-        else:
+    #     else:
 
-            print('Referencing was not considered...')
+    #         print('Referencing was not considered...')
 
-    print('')
-    print('#####################################  SBAS')
-    print('')
+    # print('')
+    # print('#####################################  SBAS')
+    # print('')
 
-    print('Please insert smooth_factor for SBAS (recommended: 5):')
-    smooth_factor = int(input())
+    # print('Please insert smooth_factor for SBAS (recommended: 5):')
+    # smooth_factor = int(input())
 
-    print('Please insert atm_factor for SBAS (recommended: 1):')
-    atm_factor = int(input())
+    # print('Please insert atm_factor for SBAS (recommended: 1):')
+    # atm_factor = int(input())
 
-    sbas = SBASadjustment(work_path, smooth_factor, atm_factor)
-    sbas.create_symboliclink_supermaster()
-    sbas.create_symboliclink_intf_baseline()
-    sbas.create_intftab_scenetab_files()
-    sbas.symbolic_link_trans_guass()
-    sbas.sbas_main()
+    # sbas = SBASadjustment(work_path, smooth_factor, atm_factor)
+    # sbas.create_symboliclink_supermaster()
+    # sbas.create_symboliclink_intf_baseline()
+    # sbas.create_intftab_scenetab_files()
+    # sbas.symbolic_link_trans_guass()
+    # sbas.sbas_main()
 
-    print('')
-    print('#####################################  Export Management')
-    print('')
+    # print('')
+    # print('#####################################  Export Management')
+    # print('')
 
-    print('Please insert filter_wavelength_resolution for generating the final output files (recommended: 400 for az and range decimations of 20 and 5):')
-    filter_wavelength_resolution = int(input())
+    # print('Please insert filter_wavelength_resolution for generating the final output files (recommended: 400 for az and range decimations of 20 and 5):')
+    # filter_wavelength_resolution = int(input())
 
-    sbasoutputs = SBASoutputs(work_path, filter_wavelength_resolution)
-    sbasoutputs.create_vel_llgrd()
-    sbasoutputs.grds_to_grdll()
-    sbasoutputs.grdll_to_geotif()
+    # sbasoutputs = SBASoutputs(work_path, filter_wavelength_resolution)
+    # sbasoutputs.create_vel_llgrd()
+    # sbasoutputs.grds_to_grdll()
+    # sbasoutputs.grdll_to_geotif()
 
 
 if __name__=='__main__':
