@@ -235,16 +235,6 @@ def main(condition_for_running):
         user_method_referencing = input()
 
         if int(user_method_referencing)==1:
-            print('DefoEye recommends you a reference point...')
-            print('Please enter the coherency threshold for considering reference point (recommended values: 0.1 or 0.2- if you do not want to consider coherency, insert 0):')
-            Th_coherency_referencepoint = input()
-            auto_referencing = Automatic_PointReferencing(work_path, float(Th_coherency_referencepoint))
-            print('Recommonding the reference point...')
-            auto_referencing.create_binary_mask()
-            auto_referencing.compute_StackInSAR()
-            auto_referencing.compute_loop_closure_and_write_outputs()
-            auto_referencing.recom_final_ref_point()
-            print('If you want to use the above reference point, insert its coordinates below. Otherwise, insert your interested coordinates:')
             print('Please enter the reference point Lat:')
             ref_lat = input()
             print('Please enter the reference point Lon:')
