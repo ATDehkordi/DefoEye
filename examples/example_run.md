@@ -1,13 +1,12 @@
-# 🚀 Example Run for DefoEye
+# 🚀 Sample dataset for running DefoEye
 
-This guide demonstrates how to run **DefoEye** using a test dataset (you can also easily download your own dataset using the data download capabilities provided by **DefoEye**)
+This guide demonstrates how to run **DefoEye** using a sample dataset (you can also easily download your own dataset using the data download capabilities provided by **DefoEye**)
 
 ---
 
-## 🧪 Test Dataset
+## 🧪 Sample Dataset
 
-The test dataset includes 8 Sentinel-1 SAR scenes (Descending mode, Subswath12, Path 143, Frame 492) related to **Houston** case study (the full description is provided in the accompanying paper).
-The released code already supports until the end of Phase Unwrapping stage.
+The sample dataset includes 8 Sentinel-1 SAR scenes (Descending mode, Subswath12, Path 143, Frame 492) related to **Houston** case study (the full description is provided in the accompanying paper).
 
 📦 Sample dataset can be downloaded from:
 > 📦 **[Download from Zenodo](https://doi.org/10.5281/zenodo.15525706)**  
