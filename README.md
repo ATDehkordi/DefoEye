@@ -1,4 +1,4 @@
-🛑 **important**: The corresponding paper is currently under review. For software illustrations, please refer to [here](docs/Step-by-Step.pdf). Please cite the paper once published when using WQEye in your work.
+🛑 **important**: The corresponding paper is currently under review. For software illustrations, please refer to [here](docs/Step-by-Step.pdf). Please cite the paper once published when using DefoEye in your work.
 
 [![Installation](https://img.shields.io/badge/Installation-PDF%20Guide-green)](docs/Installation.pdf)
 [![Tutorial](https://img.shields.io/badge/Step--by--Step%20Tutorial-PDF%20Guide-blue)](docs/Step-by-Step.pdf)
