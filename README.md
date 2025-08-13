@@ -19,7 +19,7 @@
 
 ### 📁 Getting Started
 
-A sample datasets are included with this repository ([here](example/)) to help you get started with **DefoEye**. 
+A sample datasets are included with this repository ([here](examples/)) to help you get started with **DefoEye**. 
 
 This allow you to run the software, test its functionalities, and follow the tutorial.
 
