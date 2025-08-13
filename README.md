@@ -19,9 +19,9 @@
 
 ### 📁 Getting Started
 
-A sample datasets are included with this repository ([here](examples/)) to help you get started with **DefoEye**. 
+A sample dataset is included with this repository ([here](examples/)) to help you get started with **DefoEye**. 
 
-This allow you to run the software, test its functionalities, and follow the tutorial.
+This allows you to run the software, test its functionalities, and follow the tutorial.
 
 You can also download S1 data of your own study region using DefoEye and start the TS-InSAR analysis!
 
