@@ -5,10 +5,11 @@ import shutil
 
 class Create_baselinetable_of_S1_data:
 
-    def __init__(self, path_work, list_of_IW_numbers):
+    def __init__(self, path_work, list_of_IW_numbers, n_jobs_for_coreg):
 
         self.path_work = path_work
         self.list_of_IW_numbers = list_of_IW_numbers
+        self.n_jobs_for_coreg = n_jobs_for_coreg
 
 
     # 6- create a data.in file consisting of diffrent rows in raw folder, each row: tif file id without tif:EOF file with .EOF
@@ -52,7 +53,7 @@ class Create_baselinetable_of_S1_data:
             # Command to execute the script using tcsh shell
             # command = "tcsh -c 'preproc_batch_tops.csh data.in dem.grd 1'"
 
-            command = "tcsh -c 'preproc_batch_tops_parallel.csh data.in dem.grd 8 1'"
+            command = f"tcsh -c 'preproc_batch_tops_parallel.csh data.in dem.grd {self.n_jobs_for_coreg} 1'"
 
             # Run the command
             try:

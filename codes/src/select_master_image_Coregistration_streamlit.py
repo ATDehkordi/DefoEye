@@ -45,19 +45,24 @@ class Master_selection:
 
         options = selected_entries['ID'].tolist()
 
-        print('The best options among the images for being selected as the master date:')
-        # Printing the date of S1 images
-        counter = 1
+
+        master_date_options = []
         for image_id in options:
-            print(f'Option {counter} - ', image_id[3:11])
-            counter += 1
+            master_date_options.append(image_id[3:11])
+
+        return master_date_options
+
+        # print('The best options among the images for being selected as the master date:')
+        # # Printing the date of S1 images
+        # counter = 1
+        # for image_id in options:
+        #     print(f'Option {counter} - ', image_id[3:11])
+        #     counter += 1
 
 
-    def get_master_from_user(self):
+    def get_master_from_user(self, selected_master):
 
-        print('Please insert the master image date (it could be either from the above recommondations or your preferred date- format: YYYYMMDD):')
-
-        self.master_date = input()
+        self.master_date = selected_master
 
         # Define the full path to the file
         file_path = os.path.join(self.path_work, "master_date.txt")
@@ -81,7 +86,7 @@ class Master_selection:
                             target_row = lines[i]
                     else:
                         other_rows.append(lines[i])
-
+            # print('target_row', target_row)
             with open(data_in_path, 'w') as file:
                     file.write(target_row)  # Write the target row first
                     file.writelines(other_rows)  # Write all other rows

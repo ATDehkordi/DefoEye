@@ -4,10 +4,11 @@ import numpy as np
 
 class Coregistration:
 
-    def __init__(self, path_work, list_of_IW_numbers):
+    def __init__(self, path_work, list_of_IW_numbers, n_jobs_for_coreg):
 
         self.path_work = path_work
         self.list_of_IW_numbers = list_of_IW_numbers
+        self.n_jobs_for_coreg = n_jobs_for_coreg
 
 
     def coregistration(self):
@@ -23,7 +24,7 @@ class Coregistration:
             # command = "tcsh -c 'preproc_batch_tops.csh data.in dem.grd 2'"
 
             # This is for paralleling the code
-            command = "tcsh -c 'preproc_batch_tops_parallel.csh data.in dem.grd 8 2'" 
+            command = f"tcsh -c 'preproc_batch_tops_parallel.csh data.in dem.grd {self.n_jobs_for_coreg} 2'" 
 
             # Run the command
             try:

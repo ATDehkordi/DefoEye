@@ -264,6 +264,8 @@ class merge:
 
         else:
             print("Merging error, check the outputs...")
+
+        return len(unique_shapes)
             # print("Unique shapes found:")
             # for shape in unique_shapes:
             #     print(shape)

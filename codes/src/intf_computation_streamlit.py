@@ -16,7 +16,8 @@ class Intf_compute():
     def copy_batchtops_file(self):
 
         for IW_number in self.list_of_IW_numbers:
-            shutil.copy2('/home/user/PHDLund/PythonProjects_github/GMTSAR_plus/RequiredFiles/batch_tops.config', self.path_work + 'F' + str(IW_number) + '/' + 'batch_tops.config')
+            # shutil.copy2('/home/user/PHDLund/PythonProjects_github/GMTSAR_plus/RequiredFiles/batch_tops.config', self.path_work + 'F' + str(IW_number) + '/' + 'batch_tops.config')
+            shutil.copy2('RequiredFiles/batch_tops.config', self.path_work + 'F' + str(IW_number) + '/' + 'batch_tops.config')
 
     def update_batchtops_test_firstintf(self):
 
@@ -33,8 +34,8 @@ class Intf_compute():
             filter_wavelength_value = self.filter_wavelength_value
             range_dec_value = self.range_dec_value
             azimuth_dec_value = self.azimuth_dec_value
-            threshold_snaphu_value = '0'
-            threshold_geocode_value = '0'
+            threshold_snaphu_value = '0' # zero indicate that we want to skip unwrapping as this will be done after merging the subswaths
+            threshold_geocode_value = '0' # zero indicate that we want to skip geocoding as this will be done after merging the subswaths
 
             updated_lines = []
 
@@ -319,3 +320,5 @@ class Intf_compute():
                     print("Folders with less or more than 29 items:")
                     for index, folder, item_count in folders_with_less_than_29_items:
                         print(f"Folder {index} ('{folder}') has {item_count} items")
+
+        return len(folders_with_less_than_29_items)

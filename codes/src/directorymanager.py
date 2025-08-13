@@ -1,5 +1,39 @@
 import os
 import glob
+import re
+
+def get_IW_numbers_inbase(path_base):
+
+    unique_iw_sets = set()
+    safe_folders = [f for f in os.listdir(path_base) if f.endswith(".SAFE") and os.path.isdir(os.path.join(path_base, f))]
+
+    if not safe_folders:
+        raise FileNotFoundError("No .SAFE folders found in the provided directory.")
+
+    for folder in safe_folders:
+        measurement_path = os.path.join(path_base, folder, "measurement")
+        if not os.path.isdir(measurement_path):
+            raise FileNotFoundError(f"'measurement' folder not found in {folder}")
+
+        iw_set = set()
+        for file in os.listdir(measurement_path):
+            if file.endswith(".tiff"):
+                match = re.search(r"iw(\d)", file.lower())
+                if match:
+                    iw_set.add(int(match.group(1)))
+
+        if not iw_set:
+            raise ValueError(f"No IW .tiff files found in {folder}/measurement")
+
+        # Convert set to a tuple for hashability, then add to unique set
+        unique_iw_sets.add(tuple(sorted(iw_set)))
+
+    if len(unique_iw_sets) > 1:
+        raise ValueError(f"Inconsistent IW sets found across folders: {unique_iw_sets}")
+
+    # Return the consistent set
+    return sorted(unique_iw_sets.pop())
+
 
 def create_required_directories(path_work, IW_number):
 
