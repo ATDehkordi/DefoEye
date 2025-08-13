@@ -17,11 +17,11 @@
 
 ---------------------------------------------------------------------------------------------
 
-### 📁 Getting Started with Sample Data
+### 📁 Getting Started
 
 A sample datasets are included with this repository ([here](example/)) to help you get started with **DefoEye**. 
-These datasets provides dense time series **Chl-a** and **turbidity** measurements from in-situ USGS stations in USA.
-They allow you to run the software, test its functionalities, and follow the tutorial, even if you don't have your own data yet. You can also download S1 data of your own study region using DefoEye and start the TS-InSAR analysis!
+They allow you to run the software, test its functionalities, and follow the tutorial.
+You can also download S1 data of your own study region using DefoEye and start the TS-InSAR analysis!
 
 ---------------------------------------------------------------------------------------------
 
