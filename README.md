@@ -12,7 +12,6 @@
 ### 📝 Software Documentation
 
 🛠️ For installation instructions, refer to the **Installation Guide** [here](docs/Installation.pdf).
-
 📚 A detailed **Step-by-Step Tutorial** can be found [here](docs/Step-by-Step.pdf).
 ---------------------------------------------------------------------------------------------
 
