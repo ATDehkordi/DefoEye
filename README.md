@@ -11,6 +11,8 @@
 ---------------------------------------------------------------------------------------------
 ### 📝 Software Documentation
 
+🛠️ GMTSAR is needed to run DefoEye as its wrapper, refer to the **Installation Guide** [here](docs/GMTSAR_Installation.pdf).
+
 🛠️ For installation instructions, refer to the **Installation Guide** [here](docs/Installation.pdf).
 
 📚 A detailed **Step-by-Step Tutorial** can be found [here](docs/Step-by-Step.pdf).
