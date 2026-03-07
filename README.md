@@ -7,7 +7,7 @@
   <img src="docs/logo.jpg" alt="DefoEye Logo" width="400" style="vertical-align:middle;">
 </p>
 
-### DefoEye: A Python-Based Software for Facilitated Time-Series InSAR Analysis of Sentinel-1 Remote Sensing Data
+### DefoEye: A Python-Based Wrapper for Facilitated Time-Series InSAR Analysis of Sentinel-1 Remote Sensing Data
 ---------------------------------------------------------------------------------------------
 ### 📝 Software Documentation
 
