@@ -1,4 +1,4 @@
-🛑 **important**: The corresponding paper is currently under review. For software illustrations, please refer to [here](docs/Step-by-Step.pdf). Please cite the paper once published when using DefoEye in your work.
+🛑 **important**: Please cite the corresponding papers if you are using the software. For software illustrations, please refer to [here](docs/Step-by-Step.pdf).
 
 [![Installation](https://img.shields.io/badge/Installation-PDF%20Guide-green)](docs/Installation.pdf)
 [![Tutorial](https://img.shields.io/badge/Step--by--Step%20Tutorial-PDF%20Guide-blue)](docs/Step-by-Step.pdf)
@@ -8,6 +8,14 @@
 </p>
 
 ### DefoEye: A Python-Based Wrapper for Facilitated Time-Series InSAR Analysis of Sentinel-1 Remote Sensing Data
+---------------------------------------------------------------------------------------------
+### 📝 Corresponding papers
+#### 1- https://meetingorganizer.copernicus.org/EGU26/EGU26-3070.html
+<p align="center">
+  <img src="docs/Paper.png" alt="DefoEye Logo" width="400" style="vertical-align:middle;">
+</p>
+
+📚 How to cite: Taheri Dehkordi, A., Hashemi, H., and Naghibi, A.: An End-to-End Python-Based Toolkit for Facilitated Time-Series Interferometric Synthetic Aperture Radar (InSAR) Analysis of Sentinel-1 Remote Sensing Data, EGU General Assembly 2026, Vienna, Austria, 3–8 May 2026, EGU26-3070, https://doi.org/10.5194/egusphere-egu26-3070, 2026.
 ---------------------------------------------------------------------------------------------
 ### 📝 Software Documentation
 
