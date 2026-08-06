@@ -1,4 +1,4 @@
-🛑 **important**: Please cite the corresponding papers if you are using the software. For software illustrations, please refer to [here](docs/Step-by-Step.pdf).
+🛑 **important**: Please cite the corresponding papers (there is a list of the papers you have to cite in the following) if you are using the software. For software illustrations, please refer to [here](docs/Step-by-Step.pdf).
 
 [![Installation](https://img.shields.io/badge/Installation-PDF%20Guide-green)](docs/Installation.pdf)
 [![Tutorial](https://img.shields.io/badge/Step--by--Step%20Tutorial-PDF%20Guide-blue)](docs/Step-by-Step.pdf)
