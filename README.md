@@ -4,7 +4,7 @@
 [![Tutorial](https://img.shields.io/badge/Step--by--Step%20Tutorial-PDF%20Guide-blue)](docs/Step-by-Step.pdf)
 
 <p align="center">
-  <img src="docs/logo.jpg" alt="DefoEye Logo" width="400" style="vertical-align:middle;">
+  <img src="docs/logo.jpg" alt="Paper2" width="400" style="vertical-align:middle;">
 </p>
 
 ### DefoEye: A Python-Based Wrapper for Facilitated Time-Series InSAR Analysis of Sentinel-1 Remote Sensing Data
@@ -16,7 +16,7 @@
 **How to cite:** Taheri Dehkordi, A., Hashemi, H., and Naghibi, A.: DefoEye: Python-Based Software for Facilitating Time-Series InSAR Analysis of Sentinel-1 Remote-Sensing Data, arXiv [eess.IV], arXiv:2608.04915, https://arxiv.org/abs/2608.04915, 2026.
 
 <p align="center">
-  <img src="docs/Paper2.png" alt="DefoEye Logo" width="900" style="vertical-align:middle;">
+  <img src="docs/Paper2.png" alt="Paper1" width="900" style="vertical-align:middle;">
 </p>
 
 #### 2- [EGU2026](https://meetingorganizer.copernicus.org/EGU26/EGU26-3070.html)
