@@ -11,7 +11,15 @@
 ---------------------------------------------------------------------------------------------
 ### 📝 Corresponding papers
 
-#### 1- [EGU2026](https://meetingorganizer.copernicus.org/EGU26/EGU26-3070.html)
+#### 1- [arxiv](https://arxiv.org/abs/2608.04915)
+
+**How to cite:** Taheri Dehkordi, A., Hashemi, H., and Naghibi, A.: DefoEye: Python-Based Software for Facilitating Time-Series InSAR Analysis of Sentinel-1 Remote-Sensing Data, arXiv [eess.IV], arXiv:2608.04915, https://arxiv.org/abs/2608.04915, 2026.
+
+<p align="center">
+  <img src="docs/Paper2.png" alt="DefoEye Logo" width="900" style="vertical-align:middle;">
+</p>
+
+#### 2- [EGU2026](https://meetingorganizer.copernicus.org/EGU26/EGU26-3070.html)
 
 **How to cite:** Taheri Dehkordi, A., Hashemi, H., and Naghibi, A.: An End-to-End Python-Based Toolkit for Facilitated Time-Series Interferometric Synthetic Aperture Radar (InSAR) Analysis of Sentinel-1 Remote Sensing Data, EGU General Assembly 2026, Vienna, Austria, 3–8 May 2026, EGU26-3070, https://doi.org/10.5194/egusphere-egu26-3070, 2026.
 
